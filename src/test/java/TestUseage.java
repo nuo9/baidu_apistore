@@ -1,6 +1,7 @@
 import cn.sxy.baidu.apistore.ApiResult;
 import cn.sxy.baidu.apistore.ApiStoreSDK;
 import cn.sxy.baidu.apistore.applications.Iplookup;
+import cn.sxy.baidu.apistore.applications.SearchNews;
 import cn.sxy.baidu.apistore.applications.Tcrand;
 
 import java.net.MalformedURLException;
@@ -16,7 +17,8 @@ public class TestUseage {
 
         ApiResult r0 = ApiStoreSDK.call(new Iplookup().setIp("12.65.85.15"));
         ApiResult r1 = ApiStoreSDK.call(new Tcrand());
-        System.out.println(r1);
+        ApiResult r2 = ApiStoreSDK.call(new SearchNews());
+        System.out.println(r2);
 
     }
 

@@ -12,15 +12,28 @@ import java.lang.reflect.Field;
  */
 public class DefaultResultFactory implements IResultFactory {
 
+    private String KEY_ERRNUM = "errNum";
+    private String KEY_ERRMSG = "errMsg";
+    private String KEY_RETDATA = "retData";
+
+    public DefaultResultFactory() {
+    }
+
+    public DefaultResultFactory(String errNum, String errMsg, String retData) {
+        KEY_ERRNUM = errNum;
+        KEY_ERRMSG = errMsg;
+        KEY_RETDATA = retData;
+    }
+
     @Override
     public ApiResult parse(String jsonStr) throws IllegalAccessException {
         final JSONObject json = JSON.parseObject(jsonStr);
 
-        Integer errNum = json.getInteger("errNum");
-        String errMsg = json.getString("errMsg");
+        Integer errNum = json.getInteger(KEY_ERRNUM);
+        String errMsg = json.getString(KEY_ERRMSG);
         Boolean success = errNum == 0;
-        JSONObject retData = success ? json.getJSONObject("retData") : new JSONObject(2) {{
-            put("msg", json.get("retData").toString());
+        JSONObject retData = success ? json.getJSONObject(KEY_RETDATA) : new JSONObject(2) {{
+            put("msg", json.get(KEY_RETDATA).toString());
         }};
 
         ApiResult result = new ApiResult();
