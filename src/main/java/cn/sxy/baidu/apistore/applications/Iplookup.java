@@ -4,6 +4,7 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
+ * IP地址查询
  * http://apistore.baidu.com/apiworks/servicedetail/114.html
  * Created by shangxy on 2016/9/11.
  */
