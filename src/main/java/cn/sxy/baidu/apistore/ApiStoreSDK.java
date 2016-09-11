@@ -5,6 +5,7 @@ import com.github.kevinsawicki.http.HttpRequest;
 
 import java.net.MalformedURLException;
 import java.net.URL;
+import java.util.Map;
 
 /**
  * 如果奇迹有颜色
@@ -33,7 +34,8 @@ public class ApiStoreSDK {
 
     // 请求
     private static String callString(IApp app) throws MalformedURLException {
-        String url = HttpRequest.append(app.getBaseUrl(), app.getParam());
+        Map param = MapKit.removeNull(app.getParam());
+        String url = HttpRequest.append(app.getBaseUrl(), param);
         HttpRequest request = new HttpRequest(new URL(url), app.getMethod()).headers(app.getHeader());
         return request.body();
     }

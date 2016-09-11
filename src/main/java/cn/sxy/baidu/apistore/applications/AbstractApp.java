@@ -11,7 +11,7 @@ import java.util.Map;
  * App 抽象类
  * Created by shangxy on 2016/9/11.
  */
-abstract class AbstractApp implements IApp {
+public abstract class AbstractApp implements IApp {
 
     @Override
     public Map<String, String> getHeader() {
