@@ -17,7 +17,7 @@ public class TestUseage {
 
         ApiResult r0 = ApiStoreSDK.call(new Iplookup().setIp("12.65.85.15"));
         ApiResult r1 = ApiStoreSDK.call(new Tcrand());
-        ApiResult r2 = ApiStoreSDK.call(new SearchNews());
+        ApiResult r2 = ApiStoreSDK.call(new SearchNews().setTitle("发射"));
         System.out.println(r2);
 
     }

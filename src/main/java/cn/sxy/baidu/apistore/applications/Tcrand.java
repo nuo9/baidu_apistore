@@ -1,7 +1,7 @@
 package cn.sxy.baidu.apistore.applications;
 
 import cn.sxy.baidu.apistore.results.IResultFactory;
-import cn.sxy.baidu.apistore.results.TcrandResultFactory;
+import cn.sxy.baidu.apistore.results.NakedResultFactory;
 
 /**
  * 宅言API-动漫台词接口
@@ -17,6 +17,6 @@ public class Tcrand extends AbstractApp {
 
     @Override
     public IResultFactory getResultFactory() {
-        return new TcrandResultFactory();
+        return new NakedResultFactory();
     }
 }

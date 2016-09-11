@@ -7,10 +7,10 @@ import com.alibaba.fastjson.JSONObject;
 import java.lang.reflect.Field;
 
 /**
- * Tcrand 结果
+ * 不包含 errcode 的结果
  * Created by shangxy on 2016/9/11.
  */
-public class TcrandResultFactory implements IResultFactory {
+public class NakedResultFactory implements IResultFactory {
 
     @Override
     public ApiResult parse(String jsonStr) throws IllegalAccessException {
