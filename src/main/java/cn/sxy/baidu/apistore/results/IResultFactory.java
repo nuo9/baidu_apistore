@@ -8,6 +8,6 @@ import cn.sxy.baidu.apistore.ApiResult;
  */
 public interface IResultFactory {
 
-    ApiResult parse(String json) throws IllegalAccessException;
+    ApiResult parse(String jsonStr) throws IllegalAccessException;
 
 }

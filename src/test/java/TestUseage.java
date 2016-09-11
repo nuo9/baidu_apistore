@@ -14,9 +14,9 @@ public class TestUseage {
     public static void main(String[] args) throws MalformedURLException, IllegalAccessException {
         ApiStoreSDK.init("eb9adbade360417e04449d9c746b28b3");
 
-        ApiResult r = ApiStoreSDK.call(new Iplookup().setIp("12.65.85.15"));
-        //ApiResult r = ApiStoreSDK.call(new Tcrand());
-        System.out.println(r);
+        ApiResult r0 = ApiStoreSDK.call(new Iplookup().setIp("12.65.85.15"));
+        ApiResult r1 = ApiStoreSDK.call(new Tcrand());
+        System.out.println(r1);
 
     }
 
