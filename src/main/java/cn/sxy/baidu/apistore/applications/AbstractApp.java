@@ -1,8 +1,8 @@
 package cn.sxy.baidu.apistore.applications;
 
 import cn.sxy.baidu.apistore.ApiStoreSDK;
-import cn.sxy.baidu.apistore.DefaultResultFactory;
-import cn.sxy.baidu.apistore.IResultFactory;
+import cn.sxy.baidu.apistore.results.DefaultResultFactory;
+import cn.sxy.baidu.apistore.results.IResultFactory;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -23,6 +23,11 @@ abstract class AbstractApp implements IApp {
     @Override
     public String getMethod() {
         return ApiStoreSDK.GET;
+    }
+
+    @Override
+    public Map<String, String> getParam() {
+        return new HashMap<>(2);
     }
 
     @Override

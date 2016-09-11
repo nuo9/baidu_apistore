@@ -1,5 +1,8 @@
 package cn.sxy.baidu.apistore.applications;
 
+import cn.sxy.baidu.apistore.results.IResultFactory;
+import cn.sxy.baidu.apistore.results.TcrandResultFactory;
+
 import java.util.HashMap;
 import java.util.Map;
 
@@ -15,8 +18,7 @@ public class Tcrand extends AbstractApp {
     }
 
     @Override
-    public Map<String, String> getParam() {
-        return new HashMap<String, String>();
+    public IResultFactory getResultFactory() {
+        return new TcrandResultFactory();
     }
-
 }

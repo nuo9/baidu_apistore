@@ -1,4 +1,4 @@
-package cn.sxy.baidu.apistore;
+package cn.sxy.baidu.apistore.results;
 
 import cn.sxy.baidu.apistore.ApiResult;
 

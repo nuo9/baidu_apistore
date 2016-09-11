@@ -1,6 +1,6 @@
 package cn.sxy.baidu.apistore.applications;
 
-import cn.sxy.baidu.apistore.IResultFactory;
+import cn.sxy.baidu.apistore.results.IResultFactory;
 
 import java.util.Map;
 

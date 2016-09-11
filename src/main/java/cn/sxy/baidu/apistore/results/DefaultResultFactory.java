@@ -1,5 +1,6 @@
-package cn.sxy.baidu.apistore;
+package cn.sxy.baidu.apistore.results;
 
+import cn.sxy.baidu.apistore.ApiResult;
 import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
