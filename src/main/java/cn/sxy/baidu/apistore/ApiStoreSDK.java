@@ -28,10 +28,7 @@ public class ApiStoreSDK {
 
     public static ApiResult call(IApp app) throws MalformedURLException {
         String result = callString(app);
-
-
-
-        return null;
+        return new ApiResult(result, app.getReturnKeys());
     }
 
     // 请求

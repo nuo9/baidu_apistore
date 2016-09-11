@@ -1,3 +1,4 @@
+import cn.sxy.baidu.apistore.ApiResult;
 import cn.sxy.baidu.apistore.ApiStoreSDK;
 import cn.sxy.baidu.apistore.applications.Iplookup;
 
@@ -12,7 +13,8 @@ public class TestUseage {
     public static void main(String[] args) throws MalformedURLException {
         ApiStoreSDK.init("eb9adbade360417e04449d9c746b28b3");
 
-        ApiStoreSDK.call(new Iplookup().setIp("25.35.6.15"));
+        ApiResult r = ApiStoreSDK.call(new Iplookup().setIp("12.65.85.15"));
+        System.out.println(r);
 
     }
 

@@ -1,6 +1,7 @@
 package cn.sxy.baidu.apistore.applications;
 
 import cn.sxy.baidu.apistore.ApiStoreSDK;
+import com.sun.istack.internal.NotNull;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -11,7 +12,7 @@ import java.util.Map;
  */
 public class Iplookup extends AbstractApp {
 
-    private String ip;
+    @NotNull private String ip;
 
     public Iplookup setIp(String ip) {
         this.ip = ip;
