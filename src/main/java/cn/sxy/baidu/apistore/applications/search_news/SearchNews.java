@@ -1,5 +1,6 @@
-package cn.sxy.baidu.apistore.applications;
+package cn.sxy.baidu.apistore.applications.search_news;
 
+import cn.sxy.baidu.apistore.applications.AbstractApp;
 import cn.sxy.baidu.apistore.results.DefaultResultFactory;
 import cn.sxy.baidu.apistore.results.IResultFactory;
 
