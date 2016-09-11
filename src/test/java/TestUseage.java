@@ -1,6 +1,6 @@
 import cn.sxy.baidu.apistore.ApiResult;
 import cn.sxy.baidu.apistore.ApiStoreSDK;
-import cn.sxy.baidu.apistore.applications.Iplookup;
+import cn.sxy.baidu.apistore.applications.iplookup.Iplookup;
 import cn.sxy.baidu.apistore.applications.search_news.SearchNews;
 import cn.sxy.baidu.apistore.applications.search_news.SearchNewsChannel;
 import cn.sxy.baidu.apistore.applications.tcrand.JpTcrand;

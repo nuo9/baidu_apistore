@@ -1,4 +1,6 @@
-package cn.sxy.baidu.apistore.applications;
+package cn.sxy.baidu.apistore.applications.iplookup;
+
+import cn.sxy.baidu.apistore.applications.AbstractApp;
 
 import java.util.HashMap;
 import java.util.Map;
