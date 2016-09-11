@@ -1,6 +1,7 @@
 package cn.sxy.baidu.apistore;
 
 import cn.sxy.baidu.apistore.applications.IApp;
+import cn.sxy.baidu.apistore.kit.MapKit;
 import com.github.kevinsawicki.http.HttpRequest;
 
 import java.net.MalformedURLException;

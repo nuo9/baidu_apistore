@@ -1,4 +1,4 @@
-package cn.sxy.baidu.apistore;
+package cn.sxy.baidu.apistore.kit;
 
 import java.util.HashMap;
 import java.util.Map;
