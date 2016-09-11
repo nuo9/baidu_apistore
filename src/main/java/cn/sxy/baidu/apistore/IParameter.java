@@ -1,8 +1,11 @@
 package cn.sxy.baidu.apistore;
 
 /**
- * api 返回结果
+ * 应用参数接口
  * Created by shangxy on 2016/9/11.
  */
-public class ApiReturns {
+public interface IParameter {
+
+
+
 }
