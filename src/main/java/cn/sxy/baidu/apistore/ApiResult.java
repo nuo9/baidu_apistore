@@ -21,27 +21,12 @@ public class ApiResult {
         return errNum;
     }
 
-    public ApiResult setErrNum(Integer errNum) {
-        this.errNum = errNum;
-        return this;
-    }
-
     public String getErrMsg() {
         return errMsg;
     }
 
-    public ApiResult setErrMsg(String errMsg) {
-        this.errMsg = errMsg;
-        return this;
-    }
-
     public JSONObject getRetData() {
         return retData;
-    }
-
-    public ApiResult setRetData(JSONObject retData) {
-        this.retData = retData;
-        return this;
     }
 
 }
