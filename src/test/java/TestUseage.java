@@ -16,7 +16,7 @@ import java.io.IOException;
 public class TestUseage {
 
     public static void main(String[] args) throws IOException, IllegalAccessException {
-        String appkey = "eb9adbade360417e04449d9c746b28b3";
+        String appkey = Appkey.getAppkey();
         ApiStoreSDK.init(appkey);
 
         ApiResult r0 = ApiStoreSDK.call(new Iplookup().setIp("12.65.85.15"));
