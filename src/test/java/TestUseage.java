@@ -7,7 +7,7 @@ import cn.sxy.baidu.apistore.applications.tcrand.JpTcrand;
 import cn.sxy.baidu.apistore.applications.tcrand.Tcrand;
 import cn.sxy.baidu.apistore.applications.tcrand.TcrandOld;
 
-import java.net.MalformedURLException;
+import java.io.IOException;
 
 /**
  * 使用方法
@@ -15,8 +15,9 @@ import java.net.MalformedURLException;
  */
 public class TestUseage {
 
-    public static void main(String[] args) throws MalformedURLException, IllegalAccessException {
-        ApiStoreSDK.init("eb9adbade360417e04449d9c746b28b3");
+    public static void main(String[] args) throws IOException, IllegalAccessException {
+        String appkey = "eb9adbade360417e04449d9c746b28b3";
+        ApiStoreSDK.init(appkey);
 
         ApiResult r0 = ApiStoreSDK.call(new Iplookup().setIp("12.65.85.15"));
         ApiResult r1 = ApiStoreSDK.call(new Tcrand());
