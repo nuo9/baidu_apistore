@@ -1,8 +1,5 @@
 package cn.sxy.baidu.apistore.applications;
 
-import cn.sxy.baidu.apistore.ApiStoreSDK;
-import com.sun.istack.internal.NotNull;
-
 import java.util.HashMap;
 import java.util.Map;
 
@@ -12,7 +9,7 @@ import java.util.Map;
  */
 public class Iplookup extends AbstractApp {
 
-    @NotNull private String ip;
+    private String ip;
 
     public Iplookup setIp(String ip) {
         this.ip = ip;
@@ -22,16 +19,6 @@ public class Iplookup extends AbstractApp {
     @Override
     public String getBaseUrl() {
         return "http://apis.baidu.com/apistore/iplookupservice/iplookup";
-    }
-
-    @Override
-    public String getMethod() {
-        return ApiStoreSDK.GET;
-    }
-
-    @Override
-    public String[] getReturnKeys() {
-        return new String[]{"errNum", "errMsg", "retData"};
     }
 
     @Override

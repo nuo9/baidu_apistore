@@ -1,5 +1,7 @@
 package cn.sxy.baidu.apistore.applications;
 
+import cn.sxy.baidu.apistore.IResultFactory;
+
 import java.util.Map;
 
 /**
@@ -8,11 +10,13 @@ import java.util.Map;
  */
 public interface IApp {
 
-    public Map<String, String> getHeader();
-    public Map<String, String> getParam();
+    Map<String, String> getHeader();
 
-    public String getBaseUrl();
-    public String getMethod();
+    Map<String, String> getParam();
 
-    public String[] getReturnKeys();
+    String getBaseUrl();
+
+    String getMethod();
+
+    IResultFactory getResultFactory();
 }

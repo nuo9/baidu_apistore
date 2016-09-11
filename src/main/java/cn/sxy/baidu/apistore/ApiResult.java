@@ -1,6 +1,5 @@
 package cn.sxy.baidu.apistore;
 
-import com.alibaba.fastjson.JSON;
 import com.alibaba.fastjson.JSONObject;
 
 /**
@@ -9,38 +8,40 @@ import com.alibaba.fastjson.JSONObject;
  */
 public class ApiResult {
 
-    private boolean success;
-    private int errCode;
+    private Boolean success;
+    private Integer errNum;
     private String errMsg;
-    private JSONObject body;
+    private JSONObject retData;
 
-    public ApiResult(String jsonStr, String[] returnKeys) {
-        JSONObject json = JSONObject.parseObject(jsonStr);
-        errCode = json.getIntValue(returnKeys[0]);
-        errMsg = json.getString(returnKeys[1]);
-        if (errCode == 0 || errCode == 1) {
-            body = json.getJSONObject(returnKeys[2]);
-            success = true;
-        } else {
-            body = new JSONObject();
-            success = false;
-        }
-    }
-
-    public boolean isSuccess() {
+    public Boolean isSuccess() {
         return success;
     }
 
-    public int getErrCode() {
-        return errCode;
+    public Integer getErrNum() {
+        return errNum;
     }
 
-    public String getMsg() {
+    public ApiResult setErrNum(Integer errNum) {
+        this.errNum = errNum;
+        return this;
+    }
+
+    public String getErrMsg() {
         return errMsg;
     }
 
-    public JSONObject getBody() {
-        return body;
+    public ApiResult setErrMsg(String errMsg) {
+        this.errMsg = errMsg;
+        return this;
+    }
+
+    public JSONObject getRetData() {
+        return retData;
+    }
+
+    public ApiResult setRetData(JSONObject retData) {
+        this.retData = retData;
+        return this;
     }
 
 }

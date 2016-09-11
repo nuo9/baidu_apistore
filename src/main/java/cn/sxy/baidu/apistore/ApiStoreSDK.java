@@ -26,9 +26,9 @@ public class ApiStoreSDK {
         return APIKEY;
     }
 
-    public static ApiResult call(IApp app) throws MalformedURLException {
+    public static ApiResult call(IApp app) throws MalformedURLException, IllegalAccessException {
         String result = callString(app);
-        return new ApiResult(result, app.getReturnKeys());
+        return app.getResultFactory().parse(result);
     }
 
     // 请求
