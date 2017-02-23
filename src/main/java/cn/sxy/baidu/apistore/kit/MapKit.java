@@ -9,8 +9,9 @@ import java.util.Map;
  */
 public class MapKit {
 
+    @SuppressWarnings("unchecked")
     public static Map removeNull(Map map) {
-        Map newMap = new HashMap();
+        Map newMap = new HashMap((int) (map.size() / .75) + 1);
         map.forEach((k, v) -> {
             if (v != null) {
                 newMap.put(k, v);
